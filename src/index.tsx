@@ -17,6 +17,6 @@ const JapaneseTextAnalyzer = NativeModules.JapaneseTextAnalyzer
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return JapaneseTextAnalyzer.multiply(a, b);
+export function tokenize(text: string): Promise<string> {
+  return JapaneseTextAnalyzer.tokenize(text);
 }

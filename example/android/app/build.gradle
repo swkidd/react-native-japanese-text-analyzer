@@ -120,6 +120,9 @@ def jscFlavor = 'org.webkit:android-jsc:+'
 def enableHermes = project.ext.react.get("enableHermes", false);
 
 android {
+    packagingOptions {
+        exclude 'META-INF/**'
+    }
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     compileOptions {

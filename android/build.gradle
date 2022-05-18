@@ -56,4 +56,5 @@ repositories {
 dependencies {
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation group: 'com.atilika.kuromoji', name: 'kuromoji-ipadic', version: '0.9.0'
 }
