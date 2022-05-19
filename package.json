@@ -1,6 +1,6 @@
 {
   "name": "react-native-japanese-text-analyzer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Japanese Text Morphological Analyzer for React Native using Kuromoji for Android and Mecab for iOS",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
