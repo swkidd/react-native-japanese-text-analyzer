@@ -30,6 +30,6 @@ interface Token {
   pronunciation: string;
 }
 
-export function tokenize(text: string): Promise<Token> {
+export function tokenize(text: string): Promise<Token[]> {
   return JapaneseTextAnalyzer.tokenize(text);
 }
