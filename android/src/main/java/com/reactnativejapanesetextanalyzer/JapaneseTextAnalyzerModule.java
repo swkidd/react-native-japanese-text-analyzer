@@ -20,6 +20,7 @@ import java.util.List;
 @ReactModule(name = JapaneseTextAnalyzerModule.NAME)
 public class JapaneseTextAnalyzerModule extends ReactContextBaseJavaModule {
     public static final String NAME = "JapaneseTextAnalyzer";
+    private static final Tokenizer tokenizer = new Tokenizer();
 
     public JapaneseTextAnalyzerModule(ReactApplicationContext reactContext) {
         super(reactContext);
@@ -35,7 +36,6 @@ public class JapaneseTextAnalyzerModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void tokenize(String text, Promise promise) {
         try {
-            Tokenizer tokenizer = new Tokenizer() ;
             List<Token> tokens = tokenizer.tokenize(text);
             WritableArray list = new WritableNativeArray();
             for (Token token : tokens) {
