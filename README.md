@@ -17,7 +17,7 @@ The ipadic folder must be added to the app bundle and the mecab folder to the co
 
 Add 'HAVE_CONFIG_H' to the 'Preprocessor Macros' section of the probject Build Settings.
 
-Finally, add `-liconv` as linking flags and `-fcxx-modules` and `-fmodules` to the project Build Settings tab
+Finally, add `-liconv` as linking flags and `-fcxx-modules` and `-fmodules` as 'Other C++ Flags' in the target Build Settings tab
 ## Usage
 
 ```js
