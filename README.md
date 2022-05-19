@@ -2,13 +2,20 @@
 
 A Japanese Text Morphological Analyzer for React Native using Kuromoji for Android and Mecab for iOS
 
-# ONLY ANDROID IS IMPLEMENTED CURRENTLY
 ## Installation
 
 ```sh
 npm install react-native-japanese-text-analyzer
 ```
 
+## IOS Installation
+
+In order to use this package in iOS some additional steps are involved. There are two folders that must be copied into the ios project using x-code. 
+`mecab` and `ipadic`, see the example project for folder struture. 
+
+The ipadic folder must be added to the app bundle and the mecab folder to the compiler sources, both in Build Phases tab of the target settings in x-code. 
+
+Finally, add `-ObjC`, `-lc++` and `-liconv` as linking flags and `-fcxx-modules` and `-fmodules` to the project Build Settings tab
 ## Usage
 
 ```js

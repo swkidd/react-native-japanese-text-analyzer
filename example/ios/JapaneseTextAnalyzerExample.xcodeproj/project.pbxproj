@@ -1,970 +1,1086 @@
 // !$*UTF8*$!
 {
-  archiveVersion = 1;
-  classes = {
-  };
-  objectVersion = 46;
-  objects = {
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
 
 /* Begin PBXBuildFile section */
-    00E356F31AD99517003FC87E /* JapaneseTextAnalyzerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* JapaneseTextAnalyzerExampleTests.m */; };
-    09EB680D46FE12310629C227 /* libPods-JapaneseTextAnalyzerExample-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B56BA239C969F702C63633C7 /* libPods-JapaneseTextAnalyzerExample-tvOS.a */; };
-    13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-    13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-    13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-    2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-    2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-    2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-    2DCD954D1E0B4F2C00145EB5 /* JapaneseTextAnalyzerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* JapaneseTextAnalyzerExampleTests.m */; };
-    3DDF5FAE064BC4BFAB015043 /* libPods-JapaneseTextAnalyzerExample-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6A20A3A2D31400635C17C3 /* libPods-JapaneseTextAnalyzerExample-tvOSTests.a */; };
-    4C39C56BAD484C67AA576FFA /* libPods-JapaneseTextAnalyzerExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3E69C5B9553B26FBA2DF04 /* libPods-JapaneseTextAnalyzerExample.a */; };
-    69AF7E46C79455F135C08478 /* libPods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7533C965B72700ED5E109803 /* libPods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.a */; };
-    81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		43E31E312835EEBF00BDB6CA /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 43E31E302835EEBF00BDB6CA /* main.jsbundle */; };
+		43E31EED2835F8F600BDB6CA /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 43E31EA92835F8F500BDB6CA /* rewrite.def */; };
+		43E31EEE2835F8F600BDB6CA /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 43E31EAA2835F8F500BDB6CA /* left-id.def */; };
+		43E31EEF2835F8F600BDB6CA /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 43E31EAB2835F8F500BDB6CA /* pos-id.def */; };
+		43E31EF02835F8F600BDB6CA /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 43E31EAC2835F8F500BDB6CA /* matrix.bin */; };
+		43E31EF12835F8F600BDB6CA /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 43E31EAD2835F8F500BDB6CA /* unk.dic */; };
+		43E31EF22835F8F600BDB6CA /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 43E31EAE2835F8F500BDB6CA /* sys.dic */; };
+		43E31EF32835F8F600BDB6CA /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 43E31EAF2835F8F500BDB6CA /* dicrc */; };
+		43E31EF42835F8F600BDB6CA /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 43E31EB02835F8F500BDB6CA /* right-id.def */; };
+		43E31EF52835F8F600BDB6CA /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 43E31EB12835F8F500BDB6CA /* char.bin */; };
+		43E31EF62835F8F600BDB6CA /* lbfgs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EB52835F8F500BDB6CA /* lbfgs.cpp */; };
+		43E31EF72835F8F600BDB6CA /* mecab-dict-gen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EB62835F8F500BDB6CA /* mecab-dict-gen.cpp */; };
+		43E31EF82835F8F600BDB6CA /* learner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EB82835F8F500BDB6CA /* learner.cpp */; };
+		43E31EF92835F8F600BDB6CA /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 43E31EB92835F8F500BDB6CA /* mecabrc */; };
+		43E31EFA2835F8F600BDB6CA /* dictionary_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EBC2835F8F500BDB6CA /* dictionary_generator.cpp */; };
+		43E31EFB2835F8F600BDB6CA /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EBE2835F8F500BDB6CA /* utils.cpp */; };
+		43E31EFC2835F8F600BDB6CA /* tagger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EC02835F8F500BDB6CA /* tagger.cpp */; };
+		43E31EFD2835F8F600BDB6CA /* nbest_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EC42835F8F500BDB6CA /* nbest_generator.cpp */; };
+		43E31EFE2835F8F600BDB6CA /* mecab-cost-train.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EC92835F8F500BDB6CA /* mecab-cost-train.cpp */; };
+		43E31EFF2835F8F600BDB6CA /* feature_index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31ECA2835F8F500BDB6CA /* feature_index.cpp */; };
+		43E31F002835F8F600BDB6CA /* char_property.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31ECC2835F8F500BDB6CA /* char_property.cpp */; };
+		43E31F012835F8F600BDB6CA /* mecab-test-gen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31ECD2835F8F500BDB6CA /* mecab-test-gen.cpp */; };
+		43E31F022835F8F600BDB6CA /* tokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31ECF2835F8F500BDB6CA /* tokenizer.cpp */; };
+		43E31F032835F8F600BDB6CA /* dictionary_compiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31ED12835F8F500BDB6CA /* dictionary_compiler.cpp */; };
+		43E31F042835F8F600BDB6CA /* dictionary_rewriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31ED42835F8F600BDB6CA /* dictionary_rewriter.cpp */; };
+		43E31F052835F8F600BDB6CA /* string_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31ED72835F8F600BDB6CA /* string_buffer.cpp */; };
+		43E31F062835F8F600BDB6CA /* learner_tagger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EDA2835F8F600BDB6CA /* learner_tagger.cpp */; };
+		43E31F072835F8F600BDB6CA /* param.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EDB2835F8F600BDB6CA /* param.cpp */; };
+		43E31F082835F8F600BDB6CA /* viterbi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EDC2835F8F600BDB6CA /* viterbi.cpp */; };
+		43E31F092835F8F600BDB6CA /* connector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EDD2835F8F600BDB6CA /* connector.cpp */; };
+		43E31F0A2835F8F600BDB6CA /* libmecab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EDE2835F8F600BDB6CA /* libmecab.cpp */; };
+		43E31F0B2835F8F600BDB6CA /* mecab-system-eval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EDF2835F8F600BDB6CA /* mecab-system-eval.cpp */; };
+		43E31F0C2835F8F600BDB6CA /* mecab-dict-index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EE22835F8F600BDB6CA /* mecab-dict-index.cpp */; };
+		43E31F0D2835F8F600BDB6CA /* iconv_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EE42835F8F600BDB6CA /* iconv_utils.cpp */; };
+		43E31F0E2835F8F600BDB6CA /* mecab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EE72835F8F600BDB6CA /* mecab.cpp */; };
+		43E31F0F2835F8F600BDB6CA /* eval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EE92835F8F600BDB6CA /* eval.cpp */; };
+		43E31F102835F8F600BDB6CA /* dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EEA2835F8F600BDB6CA /* dictionary.cpp */; };
+		43E31F112835F8F600BDB6CA /* writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EEB2835F8F600BDB6CA /* writer.cpp */; };
+		43E31F122835F8F600BDB6CA /* context_id.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E31EEC2835F8F600BDB6CA /* context_id.cpp */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-    00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
-      isa = PBXContainerItemProxy;
-      containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-      proxyType = 1;
-      remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-      remoteInfo = JapaneseTextAnalyzerExample;
-    };
-    2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
-      isa = PBXContainerItemProxy;
-      containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-      proxyType = 1;
-      remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-      remoteInfo = "JapaneseTextAnalyzerExample-tvOS";
-    };
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = JapaneseTextAnalyzerExample;
+		};
+		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
+			remoteInfo = "JapaneseTextAnalyzerExample-tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-    008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-    00E356EE1AD99517003FC87E /* JapaneseTextAnalyzerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapaneseTextAnalyzerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-    00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-    00E356F21AD99517003FC87E /* JapaneseTextAnalyzerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JapaneseTextAnalyzerExampleTests.m; sourceTree = "<group>"; };
-    1172626FD82B50406EC37522 /* Pods-JapaneseTextAnalyzerExample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapaneseTextAnalyzerExample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-JapaneseTextAnalyzerExample-tvOSTests/Pods-JapaneseTextAnalyzerExample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-    13B07F961A680F5B00A75B9A /* JapaneseTextAnalyzerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseTextAnalyzerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-    13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = JapaneseTextAnalyzerExample/AppDelegate.h; sourceTree = "<group>"; };
-    13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = JapaneseTextAnalyzerExample/AppDelegate.m; sourceTree = "<group>"; };
-    13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = JapaneseTextAnalyzerExample/Images.xcassets; sourceTree = "<group>"; };
-    13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = JapaneseTextAnalyzerExample/Info.plist; sourceTree = "<group>"; };
-    13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = JapaneseTextAnalyzerExample/main.m; sourceTree = "<group>"; };
-    20AB94514737C20DFC4350AE /* Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests/Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-    2D02E47B1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JapaneseTextAnalyzerExample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-    2D02E4901E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JapaneseTextAnalyzerExample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-    47F7ED3B7971BE374F7B8635 /* Pods-JapaneseTextAnalyzerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapaneseTextAnalyzerExample.debug.xcconfig"; path = "Target Support Files/Pods-JapaneseTextAnalyzerExample/Pods-JapaneseTextAnalyzerExample.debug.xcconfig"; sourceTree = "<group>"; };
-    6F6A20A3A2D31400635C17C3 /* libPods-JapaneseTextAnalyzerExample-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JapaneseTextAnalyzerExample-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-    7533C965B72700ED5E109803 /* libPods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-    81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = JapaneseTextAnalyzerExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
-    AE69546072F7DC475F196F4C /* Pods-JapaneseTextAnalyzerExample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapaneseTextAnalyzerExample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-JapaneseTextAnalyzerExample-tvOS/Pods-JapaneseTextAnalyzerExample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-    B56BA239C969F702C63633C7 /* libPods-JapaneseTextAnalyzerExample-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JapaneseTextAnalyzerExample-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-    CA3E69C5B9553B26FBA2DF04 /* libPods-JapaneseTextAnalyzerExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JapaneseTextAnalyzerExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-    E00ACF0FDA8BF921659E2F9A /* Pods-JapaneseTextAnalyzerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapaneseTextAnalyzerExample.release.xcconfig"; path = "Target Support Files/Pods-JapaneseTextAnalyzerExample/Pods-JapaneseTextAnalyzerExample.release.xcconfig"; sourceTree = "<group>"; };
-    E88D904CC5F3CC947B01AB46 /* Pods-JapaneseTextAnalyzerExample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapaneseTextAnalyzerExample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-JapaneseTextAnalyzerExample-tvOS/Pods-JapaneseTextAnalyzerExample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-    EC1294380F6AD2F72CA45BA5 /* Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.release.xcconfig"; path = "Target Support Files/Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests/Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-    ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-    ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-    FFD6887008BEF5F1A6973F45 /* Pods-JapaneseTextAnalyzerExample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapaneseTextAnalyzerExample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-JapaneseTextAnalyzerExample-tvOSTests/Pods-JapaneseTextAnalyzerExample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* JapaneseTextAnalyzerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapaneseTextAnalyzerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* JapaneseTextAnalyzerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseTextAnalyzerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = JapaneseTextAnalyzerExample/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = JapaneseTextAnalyzerExample/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = JapaneseTextAnalyzerExample/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = JapaneseTextAnalyzerExample/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = JapaneseTextAnalyzerExample/main.m; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JapaneseTextAnalyzerExample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JapaneseTextAnalyzerExample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E31E302835EEBF00BDB6CA /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		43E31EA62835F6DE00BDB6CA /* libreact-native-japanese-text-analyzer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-japanese-text-analyzer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E31EA92835F8F500BDB6CA /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rewrite.def; sourceTree = "<group>"; };
+		43E31EAA2835F8F500BDB6CA /* left-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "left-id.def"; sourceTree = "<group>"; };
+		43E31EAB2835F8F500BDB6CA /* pos-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pos-id.def"; sourceTree = "<group>"; };
+		43E31EAC2835F8F500BDB6CA /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = matrix.bin; sourceTree = "<group>"; };
+		43E31EAD2835F8F500BDB6CA /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = unk.dic; sourceTree = "<group>"; };
+		43E31EAE2835F8F500BDB6CA /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = sys.dic; sourceTree = "<group>"; };
+		43E31EAF2835F8F500BDB6CA /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dicrc; sourceTree = "<group>"; };
+		43E31EB02835F8F500BDB6CA /* right-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-id.def"; sourceTree = "<group>"; };
+		43E31EB12835F8F500BDB6CA /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = char.bin; sourceTree = "<group>"; };
+		43E31EB32835F8F500BDB6CA /* scoped_ptr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scoped_ptr.h; sourceTree = "<group>"; };
+		43E31EB42835F8F500BDB6CA /* ucstable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ucstable.h; sourceTree = "<group>"; };
+		43E31EB52835F8F500BDB6CA /* lbfgs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lbfgs.cpp; sourceTree = "<group>"; };
+		43E31EB62835F8F500BDB6CA /* mecab-dict-gen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "mecab-dict-gen.cpp"; sourceTree = "<group>"; };
+		43E31EB72835F8F500BDB6CA /* learner_tagger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = learner_tagger.h; sourceTree = "<group>"; };
+		43E31EB82835F8F500BDB6CA /* learner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = learner.cpp; sourceTree = "<group>"; };
+		43E31EB92835F8F500BDB6CA /* mecabrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mecabrc; sourceTree = "<group>"; };
+		43E31EBA2835F8F500BDB6CA /* freelist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freelist.h; sourceTree = "<group>"; };
+		43E31EBB2835F8F500BDB6CA /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		43E31EBC2835F8F500BDB6CA /* dictionary_generator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dictionary_generator.cpp; sourceTree = "<group>"; };
+		43E31EBD2835F8F500BDB6CA /* winmain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winmain.h; sourceTree = "<group>"; };
+		43E31EBE2835F8F500BDB6CA /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		43E31EBF2835F8F500BDB6CA /* char_property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = char_property.h; sourceTree = "<group>"; };
+		43E31EC02835F8F500BDB6CA /* tagger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tagger.cpp; sourceTree = "<group>"; };
+		43E31EC12835F8F500BDB6CA /* nbest_generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nbest_generator.h; sourceTree = "<group>"; };
+		43E31EC22835F8F500BDB6CA /* darts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = darts.h; sourceTree = "<group>"; };
+		43E31EC32835F8F500BDB6CA /* context_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = context_id.h; sourceTree = "<group>"; };
+		43E31EC42835F8F500BDB6CA /* nbest_generator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nbest_generator.cpp; sourceTree = "<group>"; };
+		43E31EC52835F8F500BDB6CA /* feature_index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = feature_index.h; sourceTree = "<group>"; };
+		43E31EC62835F8F500BDB6CA /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		43E31EC72835F8F500BDB6CA /* learner_node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = learner_node.h; sourceTree = "<group>"; };
+		43E31EC82835F8F500BDB6CA /* dictionary_rewriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dictionary_rewriter.h; sourceTree = "<group>"; };
+		43E31EC92835F8F500BDB6CA /* mecab-cost-train.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "mecab-cost-train.cpp"; sourceTree = "<group>"; };
+		43E31ECA2835F8F500BDB6CA /* feature_index.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = feature_index.cpp; sourceTree = "<group>"; };
+		43E31ECB2835F8F500BDB6CA /* ucs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ucs.h; sourceTree = "<group>"; };
+		43E31ECC2835F8F500BDB6CA /* char_property.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = char_property.cpp; sourceTree = "<group>"; };
+		43E31ECD2835F8F500BDB6CA /* mecab-test-gen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "mecab-test-gen.cpp"; sourceTree = "<group>"; };
+		43E31ECE2835F8F500BDB6CA /* tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tokenizer.h; sourceTree = "<group>"; };
+		43E31ECF2835F8F500BDB6CA /* tokenizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tokenizer.cpp; sourceTree = "<group>"; };
+		43E31ED02835F8F500BDB6CA /* lbfgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbfgs.h; sourceTree = "<group>"; };
+		43E31ED12835F8F500BDB6CA /* dictionary_compiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dictionary_compiler.cpp; sourceTree = "<group>"; };
+		43E31ED22835F8F500BDB6CA /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		43E31ED32835F8F500BDB6CA /* stream_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream_wrapper.h; sourceTree = "<group>"; };
+		43E31ED42835F8F600BDB6CA /* dictionary_rewriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dictionary_rewriter.cpp; sourceTree = "<group>"; };
+		43E31ED52835F8F600BDB6CA /* param.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = param.h; sourceTree = "<group>"; };
+		43E31ED62835F8F600BDB6CA /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		43E31ED72835F8F600BDB6CA /* string_buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = string_buffer.cpp; sourceTree = "<group>"; };
+		43E31ED82835F8F600BDB6CA /* dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dictionary.h; sourceTree = "<group>"; };
+		43E31ED92835F8F600BDB6CA /* string_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string_buffer.h; sourceTree = "<group>"; };
+		43E31EDA2835F8F600BDB6CA /* learner_tagger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = learner_tagger.cpp; sourceTree = "<group>"; };
+		43E31EDB2835F8F600BDB6CA /* param.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = param.cpp; sourceTree = "<group>"; };
+		43E31EDC2835F8F600BDB6CA /* viterbi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = viterbi.cpp; sourceTree = "<group>"; };
+		43E31EDD2835F8F600BDB6CA /* connector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = connector.cpp; sourceTree = "<group>"; };
+		43E31EDE2835F8F600BDB6CA /* libmecab.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = libmecab.cpp; sourceTree = "<group>"; };
+		43E31EDF2835F8F600BDB6CA /* mecab-system-eval.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "mecab-system-eval.cpp"; sourceTree = "<group>"; };
+		43E31EE02835F8F600BDB6CA /* connector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connector.h; sourceTree = "<group>"; };
+		43E31EE12835F8F600BDB6CA /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		43E31EE22835F8F600BDB6CA /* mecab-dict-index.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "mecab-dict-index.cpp"; sourceTree = "<group>"; };
+		43E31EE32835F8F600BDB6CA /* iconv_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iconv_utils.h; sourceTree = "<group>"; };
+		43E31EE42835F8F600BDB6CA /* iconv_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iconv_utils.cpp; sourceTree = "<group>"; };
+		43E31EE52835F8F600BDB6CA /* mecab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mecab.h; sourceTree = "<group>"; };
+		43E31EE62835F8F600BDB6CA /* mmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmap.h; sourceTree = "<group>"; };
+		43E31EE72835F8F600BDB6CA /* mecab.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mecab.cpp; sourceTree = "<group>"; };
+		43E31EE82835F8F600BDB6CA /* viterbi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = viterbi.h; sourceTree = "<group>"; };
+		43E31EE92835F8F600BDB6CA /* eval.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eval.cpp; sourceTree = "<group>"; };
+		43E31EEA2835F8F600BDB6CA /* dictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dictionary.cpp; sourceTree = "<group>"; };
+		43E31EEB2835F8F600BDB6CA /* writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = writer.cpp; sourceTree = "<group>"; };
+		43E31EEC2835F8F600BDB6CA /* context_id.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = context_id.cpp; sourceTree = "<group>"; };
+		47F7ED3B7971BE374F7B8635 /* Pods-JapaneseTextAnalyzerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapaneseTextAnalyzerExample.debug.xcconfig"; path = "Target Support Files/Pods-JapaneseTextAnalyzerExample/Pods-JapaneseTextAnalyzerExample.debug.xcconfig"; sourceTree = "<group>"; };
+		7CE0244C15D48CA88E96A1ED /* libPods-JapaneseTextAnalyzerExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JapaneseTextAnalyzerExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = JapaneseTextAnalyzerExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E00ACF0FDA8BF921659E2F9A /* Pods-JapaneseTextAnalyzerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapaneseTextAnalyzerExample.release.xcconfig"; path = "Target Support Files/Pods-JapaneseTextAnalyzerExample/Pods-JapaneseTextAnalyzerExample.release.xcconfig"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-    00E356EB1AD99517003FC87E /* Frameworks */ = {
-      isa = PBXFrameworksBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-        69AF7E46C79455F135C08478 /* libPods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.a in Frameworks */,
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
-    13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
-      isa = PBXFrameworksBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-        4C39C56BAD484C67AA576FFA /* libPods-JapaneseTextAnalyzerExample.a in Frameworks */,
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
-    2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
-      isa = PBXFrameworksBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-        09EB680D46FE12310629C227 /* libPods-JapaneseTextAnalyzerExample-tvOS.a in Frameworks */,
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
-    2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
-      isa = PBXFrameworksBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-        3DDF5FAE064BC4BFAB015043 /* libPods-JapaneseTextAnalyzerExample-tvOSTests.a in Frameworks */,
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-    00E356EF1AD99517003FC87E /* JapaneseTextAnalyzerExampleTests */ = {
-      isa = PBXGroup;
-      children = (
-        00E356F21AD99517003FC87E /* JapaneseTextAnalyzerExampleTests.m */,
-        00E356F01AD99517003FC87E /* Supporting Files */,
-      );
-      path = JapaneseTextAnalyzerExampleTests;
-      sourceTree = "<group>";
-    };
-    00E356F01AD99517003FC87E /* Supporting Files */ = {
-      isa = PBXGroup;
-      children = (
-        00E356F11AD99517003FC87E /* Info.plist */,
-      );
-      name = "Supporting Files";
-      sourceTree = "<group>";
-    };
-    13B07FAE1A68108700A75B9A /* JapaneseTextAnalyzerExample */ = {
-      isa = PBXGroup;
-      children = (
-        008F07F21AC5B25A0029DE68 /* main.jsbundle */,
-        13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-        13B07FB01A68108700A75B9A /* AppDelegate.m */,
-        13B07FB51A68108700A75B9A /* Images.xcassets */,
-        13B07FB61A68108700A75B9A /* Info.plist */,
-        81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
-        13B07FB71A68108700A75B9A /* main.m */,
-      );
-      name = JapaneseTextAnalyzerExample;
-      sourceTree = "<group>";
-    };
-    2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
-      isa = PBXGroup;
-      children = (
-        ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-        ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-        CA3E69C5B9553B26FBA2DF04 /* libPods-JapaneseTextAnalyzerExample.a */,
-        7533C965B72700ED5E109803 /* libPods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.a */,
-        B56BA239C969F702C63633C7 /* libPods-JapaneseTextAnalyzerExample-tvOS.a */,
-        6F6A20A3A2D31400635C17C3 /* libPods-JapaneseTextAnalyzerExample-tvOSTests.a */,
-      );
-      name = Frameworks;
-      sourceTree = "<group>";
-    };
-    6B9684456A2045ADE5A6E47E /* Pods */ = {
-      isa = PBXGroup;
-      children = (
-        47F7ED3B7971BE374F7B8635 /* Pods-JapaneseTextAnalyzerExample.debug.xcconfig */,
-        E00ACF0FDA8BF921659E2F9A /* Pods-JapaneseTextAnalyzerExample.release.xcconfig */,
-        20AB94514737C20DFC4350AE /* Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.debug.xcconfig */,
-        EC1294380F6AD2F72CA45BA5 /* Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.release.xcconfig */,
-        AE69546072F7DC475F196F4C /* Pods-JapaneseTextAnalyzerExample-tvOS.debug.xcconfig */,
-        E88D904CC5F3CC947B01AB46 /* Pods-JapaneseTextAnalyzerExample-tvOS.release.xcconfig */,
-        FFD6887008BEF5F1A6973F45 /* Pods-JapaneseTextAnalyzerExample-tvOSTests.debug.xcconfig */,
-        1172626FD82B50406EC37522 /* Pods-JapaneseTextAnalyzerExample-tvOSTests.release.xcconfig */,
-      );
-      name = Pods;
-      path = Pods;
-      sourceTree = "<group>";
-    };
-    832341AE1AAA6A7D00B99B32 /* Libraries */ = {
-      isa = PBXGroup;
-      children = (
-      );
-      name = Libraries;
-      sourceTree = "<group>";
-    };
-    83CBB9F61A601CBA00E9B192 = {
-      isa = PBXGroup;
-      children = (
-        13B07FAE1A68108700A75B9A /* JapaneseTextAnalyzerExample */,
-        832341AE1AAA6A7D00B99B32 /* Libraries */,
-        00E356EF1AD99517003FC87E /* JapaneseTextAnalyzerExampleTests */,
-        83CBBA001A601CBA00E9B192 /* Products */,
-        2D16E6871FA4F8E400B85C8A /* Frameworks */,
-        6B9684456A2045ADE5A6E47E /* Pods */,
-      );
-      indentWidth = 2;
-      sourceTree = "<group>";
-      tabWidth = 2;
-      usesTabs = 0;
-    };
-    83CBBA001A601CBA00E9B192 /* Products */ = {
-      isa = PBXGroup;
-      children = (
-        13B07F961A680F5B00A75B9A /* JapaneseTextAnalyzerExample.app */,
-        00E356EE1AD99517003FC87E /* JapaneseTextAnalyzerExampleTests.xctest */,
-        2D02E47B1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOS.app */,
-        2D02E4901E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOSTests.xctest */,
-      );
-      name = Products;
-      sourceTree = "<group>";
-    };
+		13B07FAE1A68108700A75B9A /* JapaneseTextAnalyzerExample */ = {
+			isa = PBXGroup;
+			children = (
+				43E31EA82835F8F500BDB6CA /* ipadic */,
+				43E31EB22835F8F500BDB6CA /* mecab */,
+				43E31E302835EEBF00BDB6CA /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = JapaneseTextAnalyzerExample;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43E31EA62835F6DE00BDB6CA /* libreact-native-japanese-text-analyzer.a */,
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				7CE0244C15D48CA88E96A1ED /* libPods-JapaneseTextAnalyzerExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43E31EA82835F8F500BDB6CA /* ipadic */ = {
+			isa = PBXGroup;
+			children = (
+				43E31EA92835F8F500BDB6CA /* rewrite.def */,
+				43E31EAA2835F8F500BDB6CA /* left-id.def */,
+				43E31EAB2835F8F500BDB6CA /* pos-id.def */,
+				43E31EAC2835F8F500BDB6CA /* matrix.bin */,
+				43E31EAD2835F8F500BDB6CA /* unk.dic */,
+				43E31EAE2835F8F500BDB6CA /* sys.dic */,
+				43E31EAF2835F8F500BDB6CA /* dicrc */,
+				43E31EB02835F8F500BDB6CA /* right-id.def */,
+				43E31EB12835F8F500BDB6CA /* char.bin */,
+			);
+			name = ipadic;
+			path = ../../ios/ipadic;
+			sourceTree = "<group>";
+		};
+		43E31EB22835F8F500BDB6CA /* mecab */ = {
+			isa = PBXGroup;
+			children = (
+				43E31EB32835F8F500BDB6CA /* scoped_ptr.h */,
+				43E31EB42835F8F500BDB6CA /* ucstable.h */,
+				43E31EB52835F8F500BDB6CA /* lbfgs.cpp */,
+				43E31EB62835F8F500BDB6CA /* mecab-dict-gen.cpp */,
+				43E31EB72835F8F500BDB6CA /* learner_tagger.h */,
+				43E31EB82835F8F500BDB6CA /* learner.cpp */,
+				43E31EB92835F8F500BDB6CA /* mecabrc */,
+				43E31EBA2835F8F500BDB6CA /* freelist.h */,
+				43E31EBB2835F8F500BDB6CA /* utils.h */,
+				43E31EBC2835F8F500BDB6CA /* dictionary_generator.cpp */,
+				43E31EBD2835F8F500BDB6CA /* winmain.h */,
+				43E31EBE2835F8F500BDB6CA /* utils.cpp */,
+				43E31EBF2835F8F500BDB6CA /* char_property.h */,
+				43E31EC02835F8F500BDB6CA /* tagger.cpp */,
+				43E31EC12835F8F500BDB6CA /* nbest_generator.h */,
+				43E31EC22835F8F500BDB6CA /* darts.h */,
+				43E31EC32835F8F500BDB6CA /* context_id.h */,
+				43E31EC42835F8F500BDB6CA /* nbest_generator.cpp */,
+				43E31EC52835F8F500BDB6CA /* feature_index.h */,
+				43E31EC62835F8F500BDB6CA /* config.h */,
+				43E31EC72835F8F500BDB6CA /* learner_node.h */,
+				43E31EC82835F8F500BDB6CA /* dictionary_rewriter.h */,
+				43E31EC92835F8F500BDB6CA /* mecab-cost-train.cpp */,
+				43E31ECA2835F8F500BDB6CA /* feature_index.cpp */,
+				43E31ECB2835F8F500BDB6CA /* ucs.h */,
+				43E31ECC2835F8F500BDB6CA /* char_property.cpp */,
+				43E31ECD2835F8F500BDB6CA /* mecab-test-gen.cpp */,
+				43E31ECE2835F8F500BDB6CA /* tokenizer.h */,
+				43E31ECF2835F8F500BDB6CA /* tokenizer.cpp */,
+				43E31ED02835F8F500BDB6CA /* lbfgs.h */,
+				43E31ED12835F8F500BDB6CA /* dictionary_compiler.cpp */,
+				43E31ED22835F8F500BDB6CA /* thread.h */,
+				43E31ED32835F8F500BDB6CA /* stream_wrapper.h */,
+				43E31ED42835F8F600BDB6CA /* dictionary_rewriter.cpp */,
+				43E31ED52835F8F600BDB6CA /* param.h */,
+				43E31ED62835F8F600BDB6CA /* common.h */,
+				43E31ED72835F8F600BDB6CA /* string_buffer.cpp */,
+				43E31ED82835F8F600BDB6CA /* dictionary.h */,
+				43E31ED92835F8F600BDB6CA /* string_buffer.h */,
+				43E31EDA2835F8F600BDB6CA /* learner_tagger.cpp */,
+				43E31EDB2835F8F600BDB6CA /* param.cpp */,
+				43E31EDC2835F8F600BDB6CA /* viterbi.cpp */,
+				43E31EDD2835F8F600BDB6CA /* connector.cpp */,
+				43E31EDE2835F8F600BDB6CA /* libmecab.cpp */,
+				43E31EDF2835F8F600BDB6CA /* mecab-system-eval.cpp */,
+				43E31EE02835F8F600BDB6CA /* connector.h */,
+				43E31EE12835F8F600BDB6CA /* writer.h */,
+				43E31EE22835F8F600BDB6CA /* mecab-dict-index.cpp */,
+				43E31EE32835F8F600BDB6CA /* iconv_utils.h */,
+				43E31EE42835F8F600BDB6CA /* iconv_utils.cpp */,
+				43E31EE52835F8F600BDB6CA /* mecab.h */,
+				43E31EE62835F8F600BDB6CA /* mmap.h */,
+				43E31EE72835F8F600BDB6CA /* mecab.cpp */,
+				43E31EE82835F8F600BDB6CA /* viterbi.h */,
+				43E31EE92835F8F600BDB6CA /* eval.cpp */,
+				43E31EEA2835F8F600BDB6CA /* dictionary.cpp */,
+				43E31EEB2835F8F600BDB6CA /* writer.cpp */,
+				43E31EEC2835F8F600BDB6CA /* context_id.cpp */,
+			);
+			name = mecab;
+			path = ../../ios/mecab;
+			sourceTree = "<group>";
+		};
+		6B9684456A2045ADE5A6E47E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47F7ED3B7971BE374F7B8635 /* Pods-JapaneseTextAnalyzerExample.debug.xcconfig */,
+				E00ACF0FDA8BF921659E2F9A /* Pods-JapaneseTextAnalyzerExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* JapaneseTextAnalyzerExample */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				6B9684456A2045ADE5A6E47E /* Pods */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* JapaneseTextAnalyzerExample.app */,
+				00E356EE1AD99517003FC87E /* JapaneseTextAnalyzerExampleTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-    00E356ED1AD99517003FC87E /* JapaneseTextAnalyzerExampleTests */ = {
-      isa = PBXNativeTarget;
-      buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExampleTests" */;
-      buildPhases = (
-        3BD00D8DB48E257517D6B951 /* [CP] Check Pods Manifest.lock */,
-        00E356EA1AD99517003FC87E /* Sources */,
-        00E356EB1AD99517003FC87E /* Frameworks */,
-        00E356EC1AD99517003FC87E /* Resources */,
-        441170A4DAEF877A820C1CEA /* [CP] Copy Pods Resources */,
-      );
-      buildRules = (
-      );
-      dependencies = (
-        00E356F51AD99517003FC87E /* PBXTargetDependency */,
-      );
-      name = JapaneseTextAnalyzerExampleTests;
-      productName = JapaneseTextAnalyzerExampleTests;
-      productReference = 00E356EE1AD99517003FC87E /* JapaneseTextAnalyzerExampleTests.xctest */;
-      productType = "com.apple.product-type.bundle.unit-test";
-    };
-    13B07F861A680F5B00A75B9A /* JapaneseTextAnalyzerExample */ = {
-      isa = PBXNativeTarget;
-      buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExample" */;
-      buildPhases = (
-        4F0A6FC082772762E3E4C96C /* [CP] Check Pods Manifest.lock */,
-        FD10A7F022414F080027D42C /* Start Packager */,
-        13B07F871A680F5B00A75B9A /* Sources */,
-        13B07F8C1A680F5B00A75B9A /* Frameworks */,
-        13B07F8E1A680F5B00A75B9A /* Resources */,
-        00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-        C1D60D28B925C94BD88E79D7 /* [CP] Copy Pods Resources */,
-      );
-      buildRules = (
-      );
-      dependencies = (
-      );
-      name = JapaneseTextAnalyzerExample;
-      productName = JapaneseTextAnalyzerExample;
-      productReference = 13B07F961A680F5B00A75B9A /* JapaneseTextAnalyzerExample.app */;
-      productType = "com.apple.product-type.application";
-    };
-    2D02E47A1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOS */ = {
-      isa = PBXNativeTarget;
-      buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExample-tvOS" */;
-      buildPhases = (
-        87811D0F8FEC6FC2E70EDF88 /* [CP] Check Pods Manifest.lock */,
-        FD10A7F122414F3F0027D42C /* Start Packager */,
-        2D02E4771E0B4A5D006451C7 /* Sources */,
-        2D02E4781E0B4A5D006451C7 /* Frameworks */,
-        2D02E4791E0B4A5D006451C7 /* Resources */,
-        2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
-      );
-      buildRules = (
-      );
-      dependencies = (
-      );
-      name = "JapaneseTextAnalyzerExample-tvOS";
-      productName = "JapaneseTextAnalyzerExample-tvOS";
-      productReference = 2D02E47B1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOS.app */;
-      productType = "com.apple.product-type.application";
-    };
-    2D02E48F1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOSTests */ = {
-      isa = PBXNativeTarget;
-      buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExample-tvOSTests" */;
-      buildPhases = (
-        A1191D9E34FEA625352E7BA9 /* [CP] Check Pods Manifest.lock */,
-        2D02E48C1E0B4A5D006451C7 /* Sources */,
-        2D02E48D1E0B4A5D006451C7 /* Frameworks */,
-        2D02E48E1E0B4A5D006451C7 /* Resources */,
-      );
-      buildRules = (
-      );
-      dependencies = (
-        2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
-      );
-      name = "JapaneseTextAnalyzerExample-tvOSTests";
-      productName = "JapaneseTextAnalyzerExample-tvOSTests";
-      productReference = 2D02E4901E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOSTests.xctest */;
-      productType = "com.apple.product-type.bundle.unit-test";
-    };
+		00E356ED1AD99517003FC87E /* JapaneseTextAnalyzerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExampleTests" */;
+			buildPhases = (
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = JapaneseTextAnalyzerExampleTests;
+			productName = JapaneseTextAnalyzerExampleTests;
+			productReference = 00E356EE1AD99517003FC87E /* JapaneseTextAnalyzerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* JapaneseTextAnalyzerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExample" */;
+			buildPhases = (
+				4F0A6FC082772762E3E4C96C /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				C1D60D28B925C94BD88E79D7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JapaneseTextAnalyzerExample;
+			productName = JapaneseTextAnalyzerExample;
+			productReference = 13B07F961A680F5B00A75B9A /* JapaneseTextAnalyzerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E47A1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExample-tvOS" */;
+			buildPhases = (
+				FD10A7F122414F3F0027D42C /* Start Packager */,
+				2D02E4771E0B4A5D006451C7 /* Sources */,
+				2D02E4781E0B4A5D006451C7 /* Frameworks */,
+				2D02E4791E0B4A5D006451C7 /* Resources */,
+				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JapaneseTextAnalyzerExample-tvOS";
+			productName = "JapaneseTextAnalyzerExample-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E48F1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExample-tvOSTests" */;
+			buildPhases = (
+				2D02E48C1E0B4A5D006451C7 /* Sources */,
+				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
+				2D02E48E1E0B4A5D006451C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
+			);
+			name = "JapaneseTextAnalyzerExample-tvOSTests";
+			productName = "JapaneseTextAnalyzerExample-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-    83CBB9F71A601CBA00E9B192 /* Project object */ = {
-      isa = PBXProject;
-      attributes = {
-        LastUpgradeCheck = 1130;
-        TargetAttributes = {
-          00E356ED1AD99517003FC87E = {
-            CreatedOnToolsVersion = 6.2;
-            TestTargetID = 13B07F861A680F5B00A75B9A;
-          };
-          13B07F861A680F5B00A75B9A = {
-            LastSwiftMigration = 1120;
-          };
-          2D02E47A1E0B4A5D006451C7 = {
-            CreatedOnToolsVersion = 8.2.1;
-            ProvisioningStyle = Automatic;
-          };
-          2D02E48F1E0B4A5D006451C7 = {
-            CreatedOnToolsVersion = 8.2.1;
-            ProvisioningStyle = Automatic;
-            TestTargetID = 2D02E47A1E0B4A5D006451C7;
-          };
-        };
-      };
-      buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "JapaneseTextAnalyzerExample" */;
-      compatibilityVersion = "Xcode 3.2";
-      developmentRegion = en;
-      hasScannedForEncodings = 0;
-      knownRegions = (
-        en,
-        Base,
-      );
-      mainGroup = 83CBB9F61A601CBA00E9B192;
-      productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
-      projectDirPath = "";
-      projectRoot = "";
-      targets = (
-        13B07F861A680F5B00A75B9A /* JapaneseTextAnalyzerExample */,
-        00E356ED1AD99517003FC87E /* JapaneseTextAnalyzerExampleTests */,
-        2D02E47A1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOS */,
-        2D02E48F1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOSTests */,
-      );
-    };
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = MB857JXUBX;
+						LastSwiftMigration = 1120;
+					};
+					2D02E47A1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					2D02E48F1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "JapaneseTextAnalyzerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* JapaneseTextAnalyzerExample */,
+				00E356ED1AD99517003FC87E /* JapaneseTextAnalyzerExampleTests */,
+				2D02E47A1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOSTests */,
+			);
+		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-    00E356EC1AD99517003FC87E /* Resources */ = {
-      isa = PBXResourcesBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
-    13B07F8E1A680F5B00A75B9A /* Resources */ = {
-      isa = PBXResourcesBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-        81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-        13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
-    2D02E4791E0B4A5D006451C7 /* Resources */ = {
-      isa = PBXResourcesBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-        2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
-    2D02E48E1E0B4A5D006451C7 /* Resources */ = {
-      isa = PBXResourcesBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E31EEE2835F8F600BDB6CA /* left-id.def in Resources */,
+				43E31EF52835F8F600BDB6CA /* char.bin in Resources */,
+				43E31EEF2835F8F600BDB6CA /* pos-id.def in Resources */,
+				43E31EF42835F8F600BDB6CA /* right-id.def in Resources */,
+				43E31E312835EEBF00BDB6CA /* main.jsbundle in Resources */,
+				43E31EF22835F8F600BDB6CA /* sys.dic in Resources */,
+				43E31EF32835F8F600BDB6CA /* dicrc in Resources */,
+				43E31EF12835F8F600BDB6CA /* unk.dic in Resources */,
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				43E31EED2835F8F600BDB6CA /* rewrite.def in Resources */,
+				43E31EF92835F8F600BDB6CA /* mecabrc in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				43E31EF02835F8F600BDB6CA /* matrix.bin in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4791E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-    00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
-      isa = PBXShellScriptBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-      );
-      inputPaths = (
-      );
-      name = "Bundle React Native code and images";
-      outputPaths = (
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-      shellPath = /bin/sh;
-      shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-    };
-    2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-      isa = PBXShellScriptBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-      );
-      inputPaths = (
-      );
-      name = "Bundle React Native Code And Images";
-      outputPaths = (
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-      shellPath = /bin/sh;
-      shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-    };
-    3BD00D8DB48E257517D6B951 /* [CP] Check Pods Manifest.lock */ = {
-      isa = PBXShellScriptBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-      );
-      inputFileListPaths = (
-      );
-      inputPaths = (
-        "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-        "${PODS_ROOT}/Manifest.lock",
-      );
-      name = "[CP] Check Pods Manifest.lock";
-      outputFileListPaths = (
-      );
-      outputPaths = (
-        "$(DERIVED_FILE_DIR)/Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests-checkManifestLockResult.txt",
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-      shellPath = /bin/sh;
-      shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-      showEnvVarsInLog = 0;
-    };
-    441170A4DAEF877A820C1CEA /* [CP] Copy Pods Resources */ = {
-      isa = PBXShellScriptBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-      );
-      inputPaths = (
-        "${PODS_ROOT}/Target Support Files/Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests/Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests-resources.sh",
-        "${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-      );
-      name = "[CP] Copy Pods Resources";
-      outputPaths = (
-        "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-      shellPath = /bin/sh;
-      shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests/Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests-resources.sh\"\n";
-      showEnvVarsInLog = 0;
-    };
-    4F0A6FC082772762E3E4C96C /* [CP] Check Pods Manifest.lock */ = {
-      isa = PBXShellScriptBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-      );
-      inputFileListPaths = (
-      );
-      inputPaths = (
-        "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-        "${PODS_ROOT}/Manifest.lock",
-      );
-      name = "[CP] Check Pods Manifest.lock";
-      outputFileListPaths = (
-      );
-      outputPaths = (
-        "$(DERIVED_FILE_DIR)/Pods-JapaneseTextAnalyzerExample-checkManifestLockResult.txt",
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-      shellPath = /bin/sh;
-      shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-      showEnvVarsInLog = 0;
-    };
-    87811D0F8FEC6FC2E70EDF88 /* [CP] Check Pods Manifest.lock */ = {
-      isa = PBXShellScriptBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-      );
-      inputFileListPaths = (
-      );
-      inputPaths = (
-        "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-        "${PODS_ROOT}/Manifest.lock",
-      );
-      name = "[CP] Check Pods Manifest.lock";
-      outputFileListPaths = (
-      );
-      outputPaths = (
-        "$(DERIVED_FILE_DIR)/Pods-JapaneseTextAnalyzerExample-tvOS-checkManifestLockResult.txt",
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-      shellPath = /bin/sh;
-      shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-      showEnvVarsInLog = 0;
-    };
-    A1191D9E34FEA625352E7BA9 /* [CP] Check Pods Manifest.lock */ = {
-      isa = PBXShellScriptBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-      );
-      inputFileListPaths = (
-      );
-      inputPaths = (
-        "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-        "${PODS_ROOT}/Manifest.lock",
-      );
-      name = "[CP] Check Pods Manifest.lock";
-      outputFileListPaths = (
-      );
-      outputPaths = (
-        "$(DERIVED_FILE_DIR)/Pods-JapaneseTextAnalyzerExample-tvOSTests-checkManifestLockResult.txt",
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-      shellPath = /bin/sh;
-      shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-      showEnvVarsInLog = 0;
-    };
-    C1D60D28B925C94BD88E79D7 /* [CP] Copy Pods Resources */ = {
-      isa = PBXShellScriptBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-      );
-      inputPaths = (
-        "${PODS_ROOT}/Target Support Files/Pods-JapaneseTextAnalyzerExample/Pods-JapaneseTextAnalyzerExample-resources.sh",
-        "${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-      );
-      name = "[CP] Copy Pods Resources";
-      outputPaths = (
-        "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-      shellPath = /bin/sh;
-      shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JapaneseTextAnalyzerExample/Pods-JapaneseTextAnalyzerExample-resources.sh\"\n";
-      showEnvVarsInLog = 0;
-    };
-    FD10A7F022414F080027D42C /* Start Packager */ = {
-      isa = PBXShellScriptBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-      );
-      inputFileListPaths = (
-      );
-      inputPaths = (
-      );
-      name = "Start Packager";
-      outputFileListPaths = (
-      );
-      outputPaths = (
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-      shellPath = /bin/sh;
-      shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
-      showEnvVarsInLog = 0;
-    };
-    FD10A7F122414F3F0027D42C /* Start Packager */ = {
-      isa = PBXShellScriptBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-      );
-      inputFileListPaths = (
-      );
-      inputPaths = (
-      );
-      name = "Start Packager";
-      outputFileListPaths = (
-      );
-      outputPaths = (
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-      shellPath = /bin/sh;
-      shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
-      showEnvVarsInLog = 0;
-    };
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		4F0A6FC082772762E3E4C96C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JapaneseTextAnalyzerExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1D60D28B925C94BD88E79D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JapaneseTextAnalyzerExample/Pods-JapaneseTextAnalyzerExample-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JapaneseTextAnalyzerExample/Pods-JapaneseTextAnalyzerExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F122414F3F0027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-    00E356EA1AD99517003FC87E /* Sources */ = {
-      isa = PBXSourcesBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-        00E356F31AD99517003FC87E /* JapaneseTextAnalyzerExampleTests.m in Sources */,
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
-    13B07F871A680F5B00A75B9A /* Sources */ = {
-      isa = PBXSourcesBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-        13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-        13B07FC11A68108700A75B9A /* main.m in Sources */,
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
-    2D02E4771E0B4A5D006451C7 /* Sources */ = {
-      isa = PBXSourcesBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-        2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
-        2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
-    2D02E48C1E0B4A5D006451C7 /* Sources */ = {
-      isa = PBXSourcesBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-        2DCD954D1E0B4F2C00145EB5 /* JapaneseTextAnalyzerExampleTests.m in Sources */,
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E31F122835F8F600BDB6CA /* context_id.cpp in Sources */,
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				43E31F082835F8F600BDB6CA /* viterbi.cpp in Sources */,
+				43E31F0F2835F8F600BDB6CA /* eval.cpp in Sources */,
+				43E31F0E2835F8F600BDB6CA /* mecab.cpp in Sources */,
+				43E31F042835F8F600BDB6CA /* dictionary_rewriter.cpp in Sources */,
+				43E31F0D2835F8F600BDB6CA /* iconv_utils.cpp in Sources */,
+				43E31F052835F8F600BDB6CA /* string_buffer.cpp in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				43E31EFF2835F8F600BDB6CA /* feature_index.cpp in Sources */,
+				43E31F102835F8F600BDB6CA /* dictionary.cpp in Sources */,
+				43E31EF62835F8F600BDB6CA /* lbfgs.cpp in Sources */,
+				43E31F092835F8F600BDB6CA /* connector.cpp in Sources */,
+				43E31EFA2835F8F600BDB6CA /* dictionary_generator.cpp in Sources */,
+				43E31EF82835F8F600BDB6CA /* learner.cpp in Sources */,
+				43E31EFC2835F8F600BDB6CA /* tagger.cpp in Sources */,
+				43E31F032835F8F600BDB6CA /* dictionary_compiler.cpp in Sources */,
+				43E31EFE2835F8F600BDB6CA /* mecab-cost-train.cpp in Sources */,
+				43E31F112835F8F600BDB6CA /* writer.cpp in Sources */,
+				43E31F002835F8F600BDB6CA /* char_property.cpp in Sources */,
+				43E31F0A2835F8F600BDB6CA /* libmecab.cpp in Sources */,
+				43E31EF72835F8F600BDB6CA /* mecab-dict-gen.cpp in Sources */,
+				43E31F072835F8F600BDB6CA /* param.cpp in Sources */,
+				43E31F062835F8F600BDB6CA /* learner_tagger.cpp in Sources */,
+				43E31F0B2835F8F600BDB6CA /* mecab-system-eval.cpp in Sources */,
+				43E31F0C2835F8F600BDB6CA /* mecab-dict-index.cpp in Sources */,
+				43E31EFD2835F8F600BDB6CA /* nbest_generator.cpp in Sources */,
+				43E31EFB2835F8F600BDB6CA /* utils.cpp in Sources */,
+				43E31F012835F8F600BDB6CA /* mecab-test-gen.cpp in Sources */,
+				43E31F022835F8F600BDB6CA /* tokenizer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4771E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-    00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
-      isa = PBXTargetDependency;
-      target = 13B07F861A680F5B00A75B9A /* JapaneseTextAnalyzerExample */;
-      targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
-    };
-    2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
-      isa = PBXTargetDependency;
-      target = 2D02E47A1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOS */;
-      targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
-    };
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* JapaneseTextAnalyzerExample */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02E47A1E0B4A5D006451C7 /* JapaneseTextAnalyzerExample-tvOS */;
+			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-    00E356F61AD99517003FC87E /* Debug */ = {
-      isa = XCBuildConfiguration;
-      baseConfigurationReference = 20AB94514737C20DFC4350AE /* Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.debug.xcconfig */;
-      buildSettings = {
-        BUNDLE_LOADER = "$(TEST_HOST)";
-        GCC_PREPROCESSOR_DEFINITIONS = (
-          "DEBUG=1",
-          "$(inherited)",
-        );
-        INFOPLIST_FILE = JapaneseTextAnalyzerExampleTests/Info.plist;
-        IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-        LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-        OTHER_LDFLAGS = (
-          "-ObjC",
-          "-lc++",
-          "$(inherited)",
-        );
-        PRODUCT_BUNDLE_IDENTIFIER = "com.example.reactnativejapanesetextanalyzer";
-        PRODUCT_NAME = "$(TARGET_NAME)";
-        TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseTextAnalyzerExample.app/JapaneseTextAnalyzerExample";
-      };
-      name = Debug;
-    };
-    00E356F71AD99517003FC87E /* Release */ = {
-      isa = XCBuildConfiguration;
-      baseConfigurationReference = EC1294380F6AD2F72CA45BA5 /* Pods-JapaneseTextAnalyzerExample-JapaneseTextAnalyzerExampleTests.release.xcconfig */;
-      buildSettings = {
-        BUNDLE_LOADER = "$(TEST_HOST)";
-        COPY_PHASE_STRIP = NO;
-        INFOPLIST_FILE = JapaneseTextAnalyzerExampleTests/Info.plist;
-        IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-        LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-        OTHER_LDFLAGS = (
-          "-ObjC",
-          "-lc++",
-          "$(inherited)",
-        );
-        PRODUCT_BUNDLE_IDENTIFIER = "com.example.reactnativejapanesetextanalyzer";
-        PRODUCT_NAME = "$(TARGET_NAME)";
-        TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseTextAnalyzerExample.app/JapaneseTextAnalyzerExample";
-      };
-      name = Release;
-    };
-    13B07F941A680F5B00A75B9A /* Debug */ = {
-      isa = XCBuildConfiguration;
-      baseConfigurationReference = 47F7ED3B7971BE374F7B8635 /* Pods-JapaneseTextAnalyzerExample.debug.xcconfig */;
-      buildSettings = {
-        ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-        CLANG_ENABLE_MODULES = YES;
-        CURRENT_PROJECT_VERSION = 1;
-        ENABLE_BITCODE = NO;
-        INFOPLIST_FILE = JapaneseTextAnalyzerExample/Info.plist;
-        LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-        OTHER_LDFLAGS = (
-          "$(inherited)",
-          "-ObjC",
-          "-lc++",
-        );
-        PRODUCT_BUNDLE_IDENTIFIER = "com.example.reactnativejapanesetextanalyzer";
-        PRODUCT_NAME = JapaneseTextAnalyzerExample;
-        SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-        SWIFT_VERSION = 5.0;
-        VERSIONING_SYSTEM = "apple-generic";
-      };
-      name = Debug;
-    };
-    13B07F951A680F5B00A75B9A /* Release */ = {
-      isa = XCBuildConfiguration;
-      baseConfigurationReference = E00ACF0FDA8BF921659E2F9A /* Pods-JapaneseTextAnalyzerExample.release.xcconfig */;
-      buildSettings = {
-        ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-        CLANG_ENABLE_MODULES = YES;
-        CURRENT_PROJECT_VERSION = 1;
-        INFOPLIST_FILE = JapaneseTextAnalyzerExample/Info.plist;
-        LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-        OTHER_LDFLAGS = (
-          "$(inherited)",
-          "-ObjC",
-          "-lc++",
-        );
-        PRODUCT_BUNDLE_IDENTIFIER = "com.example.reactnativejapanesetextanalyzer";
-        PRODUCT_NAME = JapaneseTextAnalyzerExample;
-        SWIFT_VERSION = 5.0;
-        VERSIONING_SYSTEM = "apple-generic";
-      };
-      name = Release;
-    };
-    2D02E4971E0B4A5E006451C7 /* Debug */ = {
-      isa = XCBuildConfiguration;
-      baseConfigurationReference = AE69546072F7DC475F196F4C /* Pods-JapaneseTextAnalyzerExample-tvOS.debug.xcconfig */;
-      buildSettings = {
-        ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-        ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-        CLANG_ANALYZER_NONNULL = YES;
-        CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-        CLANG_WARN_INFINITE_RECURSION = YES;
-        CLANG_WARN_SUSPICIOUS_MOVE = YES;
-        DEBUG_INFORMATION_FORMAT = dwarf;
-        ENABLE_TESTABILITY = YES;
-        GCC_NO_COMMON_BLOCKS = YES;
-        INFOPLIST_FILE = "JapaneseTextAnalyzerExample-tvOS/Info.plist";
-        LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-        OTHER_LDFLAGS = (
-          "$(inherited)",
-          "-ObjC",
-          "-lc++",
-        );
-        PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.JapaneseTextAnalyzerExample-tvOS";
-        PRODUCT_NAME = "$(TARGET_NAME)";
-        SDKROOT = appletvos;
-        TARGETED_DEVICE_FAMILY = 3;
-        TVOS_DEPLOYMENT_TARGET = 10.0;
-      };
-      name = Debug;
-    };
-    2D02E4981E0B4A5E006451C7 /* Release */ = {
-      isa = XCBuildConfiguration;
-      baseConfigurationReference = E88D904CC5F3CC947B01AB46 /* Pods-JapaneseTextAnalyzerExample-tvOS.release.xcconfig */;
-      buildSettings = {
-        ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-        ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-        CLANG_ANALYZER_NONNULL = YES;
-        CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-        CLANG_WARN_INFINITE_RECURSION = YES;
-        CLANG_WARN_SUSPICIOUS_MOVE = YES;
-        COPY_PHASE_STRIP = NO;
-        DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-        GCC_NO_COMMON_BLOCKS = YES;
-        INFOPLIST_FILE = "JapaneseTextAnalyzerExample-tvOS/Info.plist";
-        LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-        OTHER_LDFLAGS = (
-          "$(inherited)",
-          "-ObjC",
-          "-lc++",
-        );
-        PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.JapaneseTextAnalyzerExample-tvOS";
-        PRODUCT_NAME = "$(TARGET_NAME)";
-        SDKROOT = appletvos;
-        TARGETED_DEVICE_FAMILY = 3;
-        TVOS_DEPLOYMENT_TARGET = 10.0;
-      };
-      name = Release;
-    };
-    2D02E4991E0B4A5E006451C7 /* Debug */ = {
-      isa = XCBuildConfiguration;
-      baseConfigurationReference = FFD6887008BEF5F1A6973F45 /* Pods-JapaneseTextAnalyzerExample-tvOSTests.debug.xcconfig */;
-      buildSettings = {
-        BUNDLE_LOADER = "$(TEST_HOST)";
-        CLANG_ANALYZER_NONNULL = YES;
-        CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-        CLANG_WARN_INFINITE_RECURSION = YES;
-        CLANG_WARN_SUSPICIOUS_MOVE = YES;
-        DEBUG_INFORMATION_FORMAT = dwarf;
-        ENABLE_TESTABILITY = YES;
-        GCC_NO_COMMON_BLOCKS = YES;
-        INFOPLIST_FILE = "JapaneseTextAnalyzerExample-tvOSTests/Info.plist";
-        LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-        OTHER_LDFLAGS = (
-          "$(inherited)",
-          "-ObjC",
-          "-lc++",
-        );
-        PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.JapaneseTextAnalyzerExample-tvOSTests";
-        PRODUCT_NAME = "$(TARGET_NAME)";
-        SDKROOT = appletvos;
-        TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseTextAnalyzerExample-tvOS.app/JapaneseTextAnalyzerExample-tvOS";
-        TVOS_DEPLOYMENT_TARGET = 10.1;
-      };
-      name = Debug;
-    };
-    2D02E49A1E0B4A5E006451C7 /* Release */ = {
-      isa = XCBuildConfiguration;
-      baseConfigurationReference = 1172626FD82B50406EC37522 /* Pods-JapaneseTextAnalyzerExample-tvOSTests.release.xcconfig */;
-      buildSettings = {
-        BUNDLE_LOADER = "$(TEST_HOST)";
-        CLANG_ANALYZER_NONNULL = YES;
-        CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-        CLANG_WARN_INFINITE_RECURSION = YES;
-        CLANG_WARN_SUSPICIOUS_MOVE = YES;
-        COPY_PHASE_STRIP = NO;
-        DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-        GCC_NO_COMMON_BLOCKS = YES;
-        INFOPLIST_FILE = "JapaneseTextAnalyzerExample-tvOSTests/Info.plist";
-        LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-        OTHER_LDFLAGS = (
-          "$(inherited)",
-          "-ObjC",
-          "-lc++",
-        );
-        PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.JapaneseTextAnalyzerExample-tvOSTests";
-        PRODUCT_NAME = "$(TARGET_NAME)";
-        SDKROOT = appletvos;
-        TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseTextAnalyzerExample-tvOS.app/JapaneseTextAnalyzerExample-tvOS";
-        TVOS_DEPLOYMENT_TARGET = 10.1;
-      };
-      name = Release;
-    };
-    83CBBA201A601CBA00E9B192 /* Debug */ = {
-      isa = XCBuildConfiguration;
-      buildSettings = {
-        ALWAYS_SEARCH_USER_PATHS = NO;
-        CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-        CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-        CLANG_CXX_LIBRARY = "libc++";
-        CLANG_ENABLE_MODULES = YES;
-        CLANG_ENABLE_OBJC_ARC = YES;
-        CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-        CLANG_WARN_BOOL_CONVERSION = YES;
-        CLANG_WARN_COMMA = YES;
-        CLANG_WARN_CONSTANT_CONVERSION = YES;
-        CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-        CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-        CLANG_WARN_EMPTY_BODY = YES;
-        CLANG_WARN_ENUM_CONVERSION = YES;
-        CLANG_WARN_INFINITE_RECURSION = YES;
-        CLANG_WARN_INT_CONVERSION = YES;
-        CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-        CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-        CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-        CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-        CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-        CLANG_WARN_STRICT_PROTOTYPES = YES;
-        CLANG_WARN_SUSPICIOUS_MOVE = YES;
-        CLANG_WARN_UNREACHABLE_CODE = YES;
-        CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-        "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-        COPY_PHASE_STRIP = NO;
-        ENABLE_STRICT_OBJC_MSGSEND = YES;
-        ENABLE_TESTABILITY = YES;
-        GCC_C_LANGUAGE_STANDARD = gnu99;
-        GCC_DYNAMIC_NO_PIC = NO;
-        GCC_NO_COMMON_BLOCKS = YES;
-        GCC_OPTIMIZATION_LEVEL = 0;
-        GCC_PREPROCESSOR_DEFINITIONS = (
-          "DEBUG=1",
-          "$(inherited)",
-        );
-        GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-        GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-        GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-        GCC_WARN_UNDECLARED_SELECTOR = YES;
-        GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-        GCC_WARN_UNUSED_FUNCTION = YES;
-        GCC_WARN_UNUSED_VARIABLE = YES;
-        IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-        LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
-        LIBRARY_SEARCH_PATHS = (
-          "\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-          "\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
-          "\"$(inherited)\"",
-        );
-        MTL_ENABLE_DEBUG_INFO = YES;
-        ONLY_ACTIVE_ARCH = YES;
-        SDKROOT = iphoneos;
-      };
-      name = Debug;
-    };
-    83CBBA211A601CBA00E9B192 /* Release */ = {
-      isa = XCBuildConfiguration;
-      buildSettings = {
-        ALWAYS_SEARCH_USER_PATHS = NO;
-        CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-        CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-        CLANG_CXX_LIBRARY = "libc++";
-        CLANG_ENABLE_MODULES = YES;
-        CLANG_ENABLE_OBJC_ARC = YES;
-        CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-        CLANG_WARN_BOOL_CONVERSION = YES;
-        CLANG_WARN_COMMA = YES;
-        CLANG_WARN_CONSTANT_CONVERSION = YES;
-        CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-        CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-        CLANG_WARN_EMPTY_BODY = YES;
-        CLANG_WARN_ENUM_CONVERSION = YES;
-        CLANG_WARN_INFINITE_RECURSION = YES;
-        CLANG_WARN_INT_CONVERSION = YES;
-        CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-        CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-        CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-        CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-        CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-        CLANG_WARN_STRICT_PROTOTYPES = YES;
-        CLANG_WARN_SUSPICIOUS_MOVE = YES;
-        CLANG_WARN_UNREACHABLE_CODE = YES;
-        CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-        "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-        COPY_PHASE_STRIP = YES;
-        ENABLE_NS_ASSERTIONS = NO;
-        ENABLE_STRICT_OBJC_MSGSEND = YES;
-        GCC_C_LANGUAGE_STANDARD = gnu99;
-        GCC_NO_COMMON_BLOCKS = YES;
-        GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-        GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-        GCC_WARN_UNDECLARED_SELECTOR = YES;
-        GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-        GCC_WARN_UNUSED_FUNCTION = YES;
-        GCC_WARN_UNUSED_VARIABLE = YES;
-        IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-        LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
-        LIBRARY_SEARCH_PATHS = (
-          "\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-          "\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
-          "\"$(inherited)\"",
-        );
-        MTL_ENABLE_DEBUG_INFO = NO;
-        SDKROOT = iphoneos;
-        VALIDATE_PRODUCT = YES;
-      };
-      name = Release;
-    };
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JapaneseTextAnalyzerExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.reactnativejapanesetextanalyzer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseTextAnalyzerExample.app/JapaneseTextAnalyzerExample";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = JapaneseTextAnalyzerExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.reactnativejapanesetextanalyzer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseTextAnalyzerExample.app/JapaneseTextAnalyzerExample";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F7ED3B7971BE374F7B8635 /* Pods-JapaneseTextAnalyzerExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MB857JXUBX;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = JapaneseTextAnalyzerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+					"-fmodules",
+					"-lc++",
+					"-liconv",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.reactnativejapanesetextanalyzer;
+				PRODUCT_NAME = JapaneseTextAnalyzerExample;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E00ACF0FDA8BF921659E2F9A /* Pods-JapaneseTextAnalyzerExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MB857JXUBX;
+				INFOPLIST_FILE = JapaneseTextAnalyzerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+					"-fmodules",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.reactnativejapanesetextanalyzer;
+				PRODUCT_NAME = JapaneseTextAnalyzerExample;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		2D02E4971E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "JapaneseTextAnalyzerExample-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.JapaneseTextAnalyzerExample-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		2D02E4981E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "JapaneseTextAnalyzerExample-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.JapaneseTextAnalyzerExample-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		2D02E4991E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "JapaneseTextAnalyzerExample-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.JapaneseTextAnalyzerExample-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseTextAnalyzerExample-tvOS.app/JapaneseTextAnalyzerExample-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		2D02E49A1E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "JapaneseTextAnalyzerExample-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.JapaneseTextAnalyzerExample-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseTextAnalyzerExample-tvOS.app/JapaneseTextAnalyzerExample-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+					"-fmodules",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-liconv",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+					"-fmodules",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-liconv",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-    00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExampleTests" */ = {
-      isa = XCConfigurationList;
-      buildConfigurations = (
-        00E356F61AD99517003FC87E /* Debug */,
-        00E356F71AD99517003FC87E /* Release */,
-      );
-      defaultConfigurationIsVisible = 0;
-      defaultConfigurationName = Release;
-    };
-    13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExample" */ = {
-      isa = XCConfigurationList;
-      buildConfigurations = (
-        13B07F941A680F5B00A75B9A /* Debug */,
-        13B07F951A680F5B00A75B9A /* Release */,
-      );
-      defaultConfigurationIsVisible = 0;
-      defaultConfigurationName = Release;
-    };
-    2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExample-tvOS" */ = {
-      isa = XCConfigurationList;
-      buildConfigurations = (
-        2D02E4971E0B4A5E006451C7 /* Debug */,
-        2D02E4981E0B4A5E006451C7 /* Release */,
-      );
-      defaultConfigurationIsVisible = 0;
-      defaultConfigurationName = Release;
-    };
-    2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExample-tvOSTests" */ = {
-      isa = XCConfigurationList;
-      buildConfigurations = (
-        2D02E4991E0B4A5E006451C7 /* Debug */,
-        2D02E49A1E0B4A5E006451C7 /* Release */,
-      );
-      defaultConfigurationIsVisible = 0;
-      defaultConfigurationName = Release;
-    };
-    83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "JapaneseTextAnalyzerExample" */ = {
-      isa = XCConfigurationList;
-      buildConfigurations = (
-        83CBBA201A601CBA00E9B192 /* Debug */,
-        83CBBA211A601CBA00E9B192 /* Release */,
-      );
-      defaultConfigurationIsVisible = 0;
-      defaultConfigurationName = Release;
-    };
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExample-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4971E0B4A5E006451C7 /* Debug */,
+				2D02E4981E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "JapaneseTextAnalyzerExample-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4991E0B4A5E006451C7 /* Debug */,
+				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "JapaneseTextAnalyzerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
-  };
-  rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }

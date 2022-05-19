@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-		5E555C0D2413F4C50049A1A2 /* JapaneseTextAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* JapaneseTextAnalyzer.m */; };
-
+		43BB0BEA2834E47F00AF87F0 /* JapaneseTextAnalyzer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43BB0BE82834E47F00AF87F0 /* JapaneseTextAnalyzer.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,11 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libJapaneseTextAnalyzer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJapaneseTextAnalyzer.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
-		B3E7B5881CC2AC0600A0062D /* JapaneseTextAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JapaneseTextAnalyzer.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* JapaneseTextAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JapaneseTextAnalyzer.m; sourceTree = "<group>"; };
-
+		134814201AA4EA6300B7C361 /* libJapaneseTextAnalyzer.a */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = libJapaneseTextAnalyzer.a; path = JapaneseTextAnalyzer.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		43BB0BE82834E47F00AF87F0 /* JapaneseTextAnalyzer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JapaneseTextAnalyzer.mm; sourceTree = "<group>"; };
+		43BB0BE92834E47F00AF87F0 /* JapaneseTextAnalyzer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = JapaneseTextAnalyzer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +50,8 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
-				B3E7B5881CC2AC0600A0062D /* JapaneseTextAnalyzer.h */,
-				B3E7B5891CC2AC0600A0062D /* JapaneseTextAnalyzer.m */,
-
+				43BB0BE92834E47F00AF87F0 /* JapaneseTextAnalyzer.h */,
+				43BB0BE82834E47F00AF87F0 /* JapaneseTextAnalyzer.mm */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,7 +74,7 @@
 			name = JapaneseTextAnalyzer;
 			productName = RCTDataManager;
 			productReference = 134814201AA4EA6300B7C361 /* libJapaneseTextAnalyzer.a */;
-			productType = "com.apple.product-type.library.static";
+			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
@@ -119,9 +113,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-				B3E7B58A1CC2AC0600A0062D /* JapaneseTextAnalyzer.m in Sources */,
-
+				43BB0BEA2834E47F00AF87F0 /* JapaneseTextAnalyzer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +124,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLY_RULES_IN_COPY_HEADERS = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -154,16 +149,16 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_EXTENSION = dylib;
+				FRAMEWORK_SEARCH_PATHS = mecab;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -171,9 +166,23 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = mecab;
+				INSTALL_PATH = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = mecab;
+				MACH_O_TYPE = mh_execute;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+					"-fmodules",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-liconv",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -182,10 +191,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLY_RULES_IN_COPY_HEADERS = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -204,18 +216,36 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_EXTENSION = dylib;
+				FRAMEWORK_SEARCH_PATHS = mecab;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = mecab;
+				INSTALL_PATH = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = mecab;
+				MACH_O_TYPE = mh_execute;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fcxx-modules",
+					"-fmodules",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-liconv",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -234,7 +264,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = JapaneseTextAnalyzer;
 				SKIP_INSTALL = YES;
-
 			};
 			name = Debug;
 		};
@@ -251,7 +280,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = JapaneseTextAnalyzer;
 				SKIP_INSTALL = YES;
-
 			};
 			name = Release;
 		};
