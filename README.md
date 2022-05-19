@@ -13,7 +13,9 @@ npm install react-native-japanese-text-analyzer
 In order to use this package in iOS some additional steps are involved. There are two folders that must be copied into the ios project using x-code. 
 `mecab` and `ipadic`, see the example project for folder struture. Select 'create groups` and 'add to target' in the add files dialog.
 
-The ipadic folder must be added to the app bundle and the mecab folder to the compiler sources, both in Build Phases tab of the target settings in x-code. 
+The ipadic folder must be added to the app bundle and the mecab folder to the compiler sources, both in the Build Phases tab of the target settings in x-code. 
+
+Add 'HAVE_CONFIG_H' to the 'Preprocessor Macros' section of the probject Build Settings.
 
 Finally, add `-ObjC`, `-lc++` and `-liconv` as linking flags and `-fcxx-modules` and `-fmodules` to the project Build Settings tab
 ## Usage
